@@ -148,6 +148,6 @@ print("Pause the layers at: " + ", ".join([str(i) for i in layerPauseDepths]))
 
 print("Use the following Simplify 3D Script to add pausing on the correct layers, assuming {}mm layers.".format(s3dLayerThickness))
 for i in layerPauseDepths:
-	print(s3dScriptLine.replace('!!', str(int(round(i/s3dLayerThickness)))))
+	print(s3dScriptLine.replace('!!', str(int(i/s3dLayerThickness))))
 
 print("All done.")
